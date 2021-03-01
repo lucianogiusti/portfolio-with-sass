@@ -160,6 +160,7 @@ img {
         right: 0;
         font-size: 28px;
         background: $main-color;
+        color: set-text-color($main-color);
         border-radius: 50%;
         height: 15px;
         width: 15px;
@@ -171,6 +172,7 @@ img {
       &-icon {
         border-radius: 50%;
         background: $dark-color;
+
         color: #fff;
         padding: 2rem;
         width: 70px;
@@ -182,6 +184,7 @@ img {
 
         &:hover {
           background: $main-color;
+          color: set-text-color($main-color);
           width: 90px;
           height: 90px;
           line-height: 90px;

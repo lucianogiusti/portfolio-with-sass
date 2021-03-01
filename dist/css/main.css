@@ -206,6 +206,7 @@ img {
   right: 0;
   font-size: 28px;
   background: #ffbc00;
+  color: #fff;
   border-radius: 50%;
   height: 15px;
   width: 15px;
@@ -227,6 +228,7 @@ img {
 }
 #home-c .process-icon:hover {
   background: #ffbc00;
+  color: #fff;
   width: 90px;
   height: 90px;
   line-height: 90px;
