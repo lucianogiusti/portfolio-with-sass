@@ -35,3 +35,97 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  #header {
+    &-home {
+      background: $bg-image no-repeat center center/cover;
+    }
+  }
+
+  #home {
+    &-c {
+      .process {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  #about {
+    &-d {
+      .testimonials {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+      .header-content {
+        display: none;
+      }
+    }
+    &-inner {
+      background: $bg-image no-repeat center center / cover;
+      height: 10rem;
+    }
+  }
+
+  // Stack Grid Columns
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  .items {
+    grid-template-columns: 1fr;
+  }
+
+  #home {
+    &-b {
+      .stats div {
+        padding: 2rem 0 1rem 0;
+      }
+    }
+  }
+
+  // About
+
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          "bioimage"
+          "bio"
+          "aw1"
+          "aw2"
+          "aw3";
+      }
+    }
+    &-c {
+      display: none;
+    }
+  }
+
+  // Footer
+  #main-footer {
+    height: 7rem;
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+    }
+  }
+}
