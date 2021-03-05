@@ -252,7 +252,7 @@ img {
 }
 
 #header-home {
-  background: url("/dist/img/showcase.jpg") no-repeat center right/cover;
+  background: url("../img/showcase.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff;
 }
@@ -265,7 +265,7 @@ img {
   line-height: 1.2;
 }
 #header-inner {
-  background: url("/dist/img/showcase.jpg") no-repeat 20% 30%/cover;
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #ffbc00;
 }
@@ -513,7 +513,7 @@ img {
 }
 @media (max-width: 600px) {
   #header-home {
-    background: url("/dist/img/showcase.jpg") no-repeat center center/cover;
+    background: url("../img/showcase.jpg") no-repeat center center/cover;
   }
 
   #home-c .process {
@@ -541,7 +541,7 @@ img {
     display: none;
   }
   #header-inner {
-    background: url("/dist/img/showcase.jpg") no-repeat center center/cover;
+    background: url("../img/showcase.jpg") no-repeat center center/cover;
     height: 10rem;
   }
 
