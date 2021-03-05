@@ -420,7 +420,7 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: "name email" "subject phone" "message message";
+  grid-template-areas: "name subject" "email phone" "message message";
   gap: 1.2rem;
   margin-bottom: 1.2rem;
 }
@@ -564,6 +564,16 @@ img {
     display: none;
   }
 
+  #contact-a .text-fields {
+    padding: 0;
+    grid-template-areas: "name" "subject" "email" "phone" "message";
+  }
+  #contact-a .text-fields .subject-input,
+#contact-a .text-fields .phone-input,
+#contact-a .text-fields .message-input {
+    margin: 0;
+  }
+
   #main-footer {
     height: 7rem;
   }
@@ -571,6 +581,26 @@ img {
     flex-direction: column;
     padding: 1rem;
     height: 5rem;
+  }
+}
+@media (max-height: 580px) {
+  #header-home .header-content {
+    padding-top: 3rem;
+  }
+
+  #contact-a .text-fields {
+    padding: 0;
+    grid-template-areas: "name" "subject" "email" "phone" "message";
+  }
+  #contact-a .text-fields .subject-input,
+#contact-a .text-fields .phone-input,
+#contact-a .text-fields .message-input {
+    margin: 0;
+  }
+}
+@media (max-height: 330px) {
+  #header-home .header-content h1 {
+    font-size: 2rem;
   }
 }
 
